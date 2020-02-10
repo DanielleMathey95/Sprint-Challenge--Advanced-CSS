@@ -238,9 +238,6 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     flex-direction: column-reverse;
   }
 }
@@ -283,31 +280,7 @@ footer {
   .launch {
     display: none;
   }
-  .visit-planets {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-  }
-  .visit-planets .planets-text {
-    width: 50%;
-  }
-  .intro {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-  }
-  .intro .lift-off-text {
-    width: 50%;
-  }
-  .intro {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-  }
   .blast {
     width: 500px;
-    display: block;
   }
 }

@@ -2,8 +2,10 @@
 
 .home {
 
+
   .intro {
 
+ 
 
     h2 {
       padding: 15px;
@@ -11,12 +13,15 @@
 
     p {
       padding:0 15px;
+      @media @mobile{
+        text-align: justify;
+      
     }
 
   
   }
 
-  .space-images{
+  .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -38,8 +43,12 @@
 
     p {
       margin-top: 13px;
+      @media @mobile {
+        text-align: justify;
+      }
     }
   }
+}
 
   .walk {
     margin-top: 60px;
@@ -48,19 +57,28 @@
     display: flex;
     justify-content: center;
     @media (max-width: 500px) {
-    .flex(flex, center, center);
-      flex-direction: column-reverse;
+    .flex(flex, space-evenly);
+    flex-direction: column-reverse;
+    width: 100%; 
+    padding: 15px;
+    margin: 0;
     }
 
     .walk-text {
-      width: 50%;
-
+      width: 75%;
+    }
       h3 {
         margin-bottom: 10px;
       }
 
       p {
         margin-bottom: 26px;
+      }
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+        margin: 0;
       }
 
       .btn {
@@ -72,7 +90,9 @@
         color: white;
         font-size: 1.5rem;
         @media @mobile {
-          width: 30rem;
+          width: 100%;
+          padding-top: 20px;
+          padding-bottom: 20px;
         }
       }
     }
@@ -80,14 +100,18 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @mobile {
+        width: 100%;
+        align-items: center;
+        margin: 0 0 15px 0;
+      }
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
     }
-  }
+
 }// home
 
 //Mobile Media Queries//
@@ -98,34 +122,6 @@
   }
   .launch {
     display: none;
-  }
-  
-
-  .visit-planets {
-    .flex(flex, center, center);
-      flex-direction: column;
-
-     .planets-text {
-       width: 50%;
-
-     }
-    }
-  .intro {
-    .flex(flex, center, center);
-      flex-direction: column;
-
-      .lift-off-text {
-        width: 50%;
-      }
-  }
-
-  .intro {
-    .width();
-  }
-
-  .blast {
-    width: 500px;
-    display: block;
   }
 
 }//media
