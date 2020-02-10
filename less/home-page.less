@@ -48,7 +48,7 @@
     display: flex;
     justify-content: center;
     @media (max-width: 500px) {
-      .flex(flex, space-evenly, center);
+    .flex(flex, center, center);
       flex-direction: column-reverse;
     }
 
@@ -89,29 +89,43 @@
     }
   }
 }// home
-@media (max-width: 500px){
+
+//Mobile Media Queries//
+
+@media(max-width: 500px){
   .sky {
     display: none;
   }
   .launch {
     display: none;
   }
-  .blast {
-    width: 100%;
-  }
+  
 
   .visit-planets {
-    .flex(flex, space-evenly, center);
+    .flex(flex, center, center);
       flex-direction: column;
 
-      h3 {
-        font-size: 2rem;
-      }
+     .planets-text {
+       width: 50%;
 
-       p {
-         width: 50%;
-       }
+     }
     }
+  .intro {
+    .flex(flex, center, center);
+      flex-direction: column;
 
+      .lift-off-text {
+        width: 50%;
+      }
+  }
+
+  .intro {
+    .width();
+  }
+
+  .blast {
+    width: 500px;
+    display: block;
+  }
 
 }//media
