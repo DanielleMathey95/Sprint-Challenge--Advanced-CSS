@@ -1,0 +1,19 @@
+1.What is the difference between an adaptive website and a fully responsive website?
+
+Adaptive websites have multiple fixed layout sizes. Responsive websites use media queries which make it much easier to style the browser depending on the screen size. 
+
+2.Describe what it means to be mobile first vs desktop first.
+
+With mobile first you implement min-width to all of your media queries and start with mobile first and go up from there, whereas with desktop first you use max-width and go down from there. 
+
+3.What does font-size: 62.5% in the html tag do for us when using rem units?
+
+It would make the entire default font size of the webpage 10px, which would make it smaller than the default 1rem so I'm not sure why we would ever implement such a thing? 
+
+4.How would you describe preprocessing to someone new to CSS?
+
+I would describe it as a much easier way to use CSS by being able to style it into different chunks, it's nice not to have to scroll through hundreds upon hundreds of lines of code to try and find something and change it. 
+
+5.What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I personally like nesting. It makes things a lot easier for me. I think the issue I have the most trouble implementing are the parametric mixins and also the regular mixins. I never know if I'm using them correctly or if they're even doing anything. I think the only one I like to use is a flex one where I can specify the display, direction, and the alignment. 

@@ -1,1 +1,17 @@
 // Mixins Here
+.flex(@display, @justify, @align){
+  display: @display;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.width() {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.signUp(@color; @backgroundcolor) {
+  color: @color;
+  background-color: @backgroundcolor;
+}
