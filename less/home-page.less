@@ -14,8 +14,7 @@
     p {
       padding:0 15px;
       @media @mobile{
-        text-align: justify;
-      
+      text-align: justify;
     }
 
   
@@ -57,17 +56,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-    @media (max-width: 500px) {
+    @media @mobile {
     display: flex;
     flex-direction: column-reverse;
     width: 100%; 
     padding: 15px;
-    
-    }
+    } 
+  }
 
     .walk-text {
       width: 50%;
-    margin: 10px;}
+      margin: 10px;
+    }
       h3 {
         margin-bottom: 10px;
       }
@@ -106,14 +106,14 @@
         margin: 0 0 15px 0;
       }
       img {
-        width: 90%;
+        width: 110%;
         height: auto;
         border-radius: 10px;
         margin: 10px;
       }
     }
 
-}// home
+// home
 
 //Mobile Media Queries//
 
@@ -132,7 +132,7 @@
   }
 
   .main-header-img {
-    width: 98%;
+    width: 100%;
   }
 
 }//media
