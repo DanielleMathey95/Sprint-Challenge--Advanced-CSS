@@ -1,7 +1,8 @@
 // Mixins Here
-.flex(@display, @justify){
-  display: flex;
-  justify-content: space-evenly;
+.flex(@display, @justify, @align){
+  display: @display;
+  justify-content: @justify;
+  align-items: @align;
 }
 
 .width() {
